@@ -19,7 +19,7 @@ jobs:
       - name: Run Dura
         run: dura https://github.com/${{ github.repository }} --json > dura.json
       - name: Upload report artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7.0.1
         with: 
           name: DURA Analysis
           path: dura.json
